@@ -11,10 +11,10 @@ export const UserList = () => {
       <h2>Lista de Usuarios</h2>
       <div>
         {users.map((user) => (
-          <div key={user.id}>``
-            <h3>{user.fullname}</h3>
+          <div key={user.id}>
+            <h3>{user.name}</h3>
             <p><strong>Correo</strong>{user.email}</p>
-            <p><strong>Estado</strong>{user.status}</p>
+            <p><strong>Nombre usuario</strong>{user.username}</p>
           </div>
         ))}
       </div>
